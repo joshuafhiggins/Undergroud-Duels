@@ -6,6 +6,7 @@ public class PlayerShoot : NetworkBehaviour
     private const string PLAYER_TAG = "Player";
 
     public PlayerWeapon weapon;
+
     public Camera camera;
     public LayerMask mask;
 
