@@ -1,18 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Gun : MonoBehaviour
+﻿//Basic class contianer with all of the properties of a weapon
+[System.Serializable]
+public class Gun
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string name = "Gun";
+    public int damage = 10;
+    public float range = 100f;
 }

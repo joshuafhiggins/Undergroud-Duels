@@ -1,18 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class GunManager : MonoBehaviour
+//Manages the clients' guns
+public class GunManager : NetworkBehaviour
 {
-    // Start is called before the first frame update
+    public List<Gun> Weapons;
+    
+    [SyncVar]
+    private Gun currentWeapon;
+
+    //On game start the client equips the first listed weapon in Weapons
     void Start()
     {
-        
+        EquipWeapon(Weapons[0]);
     }
 
-    // Update is called once per frame
-    void Update()
+    //Gets the client's current active weapon
+    public Gun GetCurrentWeapon()
     {
-        
+        return currentWeapon;
+    }
+
+    //Equips a new weapon based on the parameter, although should only be equiping weapons from the list
+    void EquipWeapon(Gun weapon)
+    {
+        currentWeapon = weapon;
     }
 }

@@ -14,7 +14,10 @@ GameObject:
   - component: {fileID: 3882249640058649756}
   - component: {fileID: 8103054092210223940}
   - component: {fileID: 3583184750189818808}
+  - component: {fileID: -4041068127444106403}
   - component: {fileID: -8666927475682594794}
+  - component: {fileID: -2727478858530068185}
+  - component: {fileID: 369481467701351362}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -178,6 +181,25 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+--- !u!114 &-4041068127444106403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882249640058649757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42be20ad958a79745bff7a7296752127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  maxHealth: 125
+  currentHealth: 0
+  disbaledOnDeath:
+  - {fileID: 3882249640058649756}
+  - {fileID: 3882249641059229576}
 --- !u!114 &-8666927475682594794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +220,43 @@ MonoBehaviour:
   - {fileID: 3882249641209722146}
   - {fileID: 3882249641209722147}
   remotePlayerLayer: 12
+--- !u!114 &-2727478858530068185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882249640058649757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1ae6e32aee4154780ed009bdc3b778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  Weapons:
+  - name: Pistol
+    damage: 15
+    range: 1000
+--- !u!114 &369481467701351362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882249640058649757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8896ea855d0897a479f0bf8d4db36628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  camera: {fileID: 3882249641209722146}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4096
+  weaponManager: {fileID: -2727478858530068185}
 --- !u!1 &3882249641059229578
 GameObject:
   m_ObjectHideFlags: 0

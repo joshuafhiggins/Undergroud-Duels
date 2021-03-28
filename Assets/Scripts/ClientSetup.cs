@@ -2,6 +2,8 @@
 using UnityEngine;
 using Mirror;
 
+//Sets up Clients on connect to define wether they are localPlayers or remotePlayers
+[RequireComponent(typeof(Client))]
 public class ClientSetup : NetworkBehaviour
 {
     public List<Behaviour> DisableForNonLocalPlayers;
@@ -35,27 +37,35 @@ public class ClientSetup : NetworkBehaviour
             }
         }
 
-        //Append the name of the Player with the Network ID, Regardless of being Local
-        gameObject.name = "Player" + netId;
-        
-        //Register players into the manager
-        /*Player player = GetComponent<Player>();
-        string netID = GetComponent<NetworkIdentity>().netId.ToString();
-        GameManager.RegisterPlayer(netID, player);*/
+        GetComponent<Client>().Setup();
     }
 
-    //Called when this object is destroyed, should only occur if the serevr Destroyed it, this should mean the localPlayer disconnected
-    public void OnDisable()
+    //Register players into the manager and sets their names with their IDs
+    public override void OnStartClient()
     {
-        //Renables Scene Camera
-        if (SceneCamera != null)
+        base.OnStartClient();
+        Client client = GetComponent<Client>();
+        string netID = GetComponent<NetworkIdentity>().netId.ToString();
+        ClientManager.RegisterClient(netID, client);
+    }
+
+    //Called when this client disconnects from the server
+    public override void OnStopClient()
+    {
+        //Renables Scene Camera if it was the localPlayer that disconnected
+        if (SceneCamera != null && isLocalPlayer)
         {
             SceneCamera.gameObject.SetActive(true);
         }
 
         //Unregister the player from the manager
-        //GameManager.UnregisterPlayer(gameObject.name);
+        ClientManager.UnregisterClient(gameObject.name);
+
+        //SHould be called after this interaction so we can see if isLocalPlayer is true or not
+        base.OnStopClient();
     }
+
+   
 
     //Common function to set layers recursivley
     void SetLayerRecursively(GameObject obj, int newLayer)
