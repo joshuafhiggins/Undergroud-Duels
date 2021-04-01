@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: materials_models_player_scout_scout_head_red
-  m_Shader: {fileID: 4800000, guid: 5c6bdddc3f533e743a1ee72273a19709, type: 3}
+  m_Shader: {fileID: 4800000, guid: 760f6fbb889487d4a9c4f13ed28d5a4e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -105,7 +105,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 0.97, g: 0.88, b: 1, a: 0.75}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
