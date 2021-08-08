@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.johnsoncodehk.unity-asset-inspector": {
+      "version": "https://github.com/johnsoncodehk/unity-asset-inspector.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "1c918165376ae94ed08a67ba0a7541a72ae02d7c"
+    },
     "com.unity.collab-proxy": {
       "version": "1.2.16",
       "depth": 0,

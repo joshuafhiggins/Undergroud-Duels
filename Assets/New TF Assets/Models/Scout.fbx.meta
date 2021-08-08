@@ -1,35 +1,12 @@
 fileFormatVersion: 2
-guid: 9c494cd09db760d4dbab0fc68626ce2e
+guid: b833e938cc70f1643baff4382e20115c
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 5254406651239825975
-    second: models/player/scout|models/player/scout_anims/ragdoll
-  - first:
-      74: -1873931353490320336
-    second: models/player/scout|models/player/scout_anims/ref
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: materials_models_player_scout_eyeball_l
-    second: {fileID: 2100000, guid: 41edcbf1d17615f479517da58e1747ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: materials_models_player_scout_eyeball_r
-    second: {fileID: 2100000, guid: e9686cd3ad5caf141b4afd7584de0880, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: materials_models_player_scout_scout_head_red
-    second: {fileID: 2100000, guid: 5e8fae014fb4a1b4ea6adbadf055b108, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: materials_models_player_scout_scout_red
-    second: {fileID: 2100000, guid: 1ffead21692dd464c8d4c8a67071da0a, type: 2}
+      74: -1308667300637991387
+    second: scout.qc_skeleton|ref
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -56,40 +33,11 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: models/player/scout|models/player/scout_anims/ref
-      takeName: models/player/scout|models/player/scout_anims/ref
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.05
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -136,7 +84,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0005
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
