@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Underground-Duels.iml" filepath="$PROJECT_DIR$/Underground-Duels.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="openjdk-16" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ButterEngine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CivCraft" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LearningVulkan" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Sourcemod-Plugins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TF2-csharp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Undergroud-Duels" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/VulkanInJava" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WeebDetector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/halflife-updated" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/higgy999.github.io" vcs="Git" />
+  </component>
+</project>
