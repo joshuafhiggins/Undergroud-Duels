@@ -27,4 +27,17 @@
     <mapping directory="$PROJECT_DIR$/halflife-updated" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/higgy999.github.io" vcs="Git" />
   </component>
+  <component name="libraryTable">
+    <library name="libs">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/libs" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$PROJECT_DIR$/libs" />
+      </SOURCES>
+      <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
+      <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" type="SOURCES" />
+    </library>
+  </component>
 </project>
